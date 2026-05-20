@@ -1,0 +1,167 @@
+// MC1 HUB — Employee Benefits Data
+import { getLang, getCountry } from '../i18n.js';
+import { beneficiosTranslations } from './beneficios-i18n.js';
+
+export const beneficios = [
+  {
+    id: 'vale-refeicao',
+    name: 'Vale Refeição & Alimentação',
+    shortDesc: 'Créditos mensais para refeições e alimentação via cartão Flash.',
+    description: 'O vale refeição e alimentação é disponibilizado mensalmente no cartão Flash, podendo ser utilizado em restaurantes, padarias, supermercados e estabelecimentos conveniados em todo o Brasil. Utilize sempre na função crédito.',
+    details: 'O saldo é disponibilizado todo dia 25 do mês, ou no dia útil que anteceder essa data em caso de feriado ou fim de semana. O cartão chega pelos Correios em até 10 dias úteis após a admissão; enquanto isso, acesse seu saldo direto pelo app Flash. Em caso de demissão, os créditos são proporcionais aos dias trabalhados.',
+    icon: 'icon-utensils',
+    color: '#e8f5e9',
+    iconColor: '#2e7d32',
+    category: 'Alimentação',
+    provider: 'Flash',
+    howToAccess: 'Você receberá um e-mail da Flash ("Flash | Seja Bem Vindo!") com sua senha. Baixe o app Flash, faça login e use sempre na função crédito. O cartão físico chega pelo Correios em até 10 dias úteis.',
+    gradient: 'linear-gradient(135deg, #004b71, #006494)',
+    logo: 'flashapp.com.br',
+    countries: ['BR'],
+  },
+  {
+    id: 'vale-transporte',
+    name: 'Vale Transporte',
+    shortDesc: 'Subsídio para deslocamento residência-trabalho.',
+    description: 'O vale transporte cobre o deslocamento diário do colaborador entre residência e local de trabalho, conforme legislação vigente (Lei 7.418/85). O desconto em folha é de 2,5% sobre o valor bruto do salário, exceto para estagiários.',
+    details: 'O benefício é pago sempre no último dia do mês para utilização no mês seguinte. O crédito é disponibilizado diretamente no cartão vinculado ao CPF do colaborador. Válido para transporte público (ônibus, metrô, trem). O desconto é realizado em folha de pagamento.',
+    icon: 'icon-bus',
+    color: '#e3f2fd',
+    iconColor: '#1565c0',
+    category: 'Transporte',
+    provider: 'Bilhete Único / Cartão CPF',
+    howToAccess: 'Informe seu endereço e linha de transporte ao RH no momento da admissão. O crédito é carregado direto no cartão vinculado ao seu CPF. Atualize seus dados sempre que mudar de endereço ou trajeto.',
+    gradient: 'linear-gradient(135deg, #1a3460, #2550a0)',
+    logo: null,
+    countries: ['BR'],
+  },
+  {
+    id: 'assistencia-medica',
+    name: 'Assistência Médica',
+    shortDesc: 'Plano de saúde com cobertura nacional, sem carência e telemedicina.',
+    description: 'Plano de saúde SulAmérica com cobertura em todo território nacional e sem carência para colaboradores e dependentes. Inclui consultas, exames, internações, cirurgias, urgência e emergência 24h e telemedicina com especialistas. A carteirinha e a rede referenciada são 100% digitais.',
+    details: 'Você tem até 30 dias a partir da admissão para incluir dependentes sem carência. O custo dos dependentes (cônjuge e filhos até 24 anos) é totalmente do colaborador, descontado em folha. O acesso ao plano ocorre em até 7 dias úteis. A carteirinha digital chega por e-mail em até 7 dias úteis.',
+    icon: 'icon-heart',
+    color: '#fce4ec',
+    iconColor: '#c62828',
+    category: 'Saúde',
+    provider: 'SulAmérica',
+    howToAccess: 'Você receberá a carteirinha digital por e-mail em até 7 dias úteis. Para incluir dependentes, entre em contato com o RH em até 30 dias da admissão. Acesse a rede credenciada pelo app SulAmérica ou pelo site.',
+    gradient: 'linear-gradient(135deg, #c62828, #e53935)',
+    logo: 'sulamerica.com.br',
+    countries: ['BR'],
+  },
+  {
+    id: 'assistencia-odontologica',
+    name: 'Assistência Odontológica',
+    shortDesc: 'Plano odontológico SulAmérica, sem carência e 100% digital.',
+    description: 'Plano odontológico SulAmérica com cobertura em todo o território nacional e sem carência para colaboradores e dependentes. Inclui consultas, limpeza, restaurações, extrações e tratamentos de canal. Carteirinha e rede referenciada 100% digitais.',
+    details: 'Você tem até 30 dias a partir da admissão para incluir dependentes sem carência. O custo dos dependentes (cônjuge, filhos até 24 anos e agregados consanguíneos) é totalmente do colaborador, descontado em folha. O acesso ao plano ocorre em até 7 dias úteis.',
+    icon: 'icon-star',
+    color: '#e8eaf6',
+    iconColor: '#3949ab',
+    category: 'Saúde',
+    provider: 'SulAmérica',
+    howToAccess: 'Você receberá a carteirinha digital por e-mail em até 7 dias úteis. Para incluir dependentes, solicite ao RH em até 30 dias da admissão. Busque dentistas credenciados pelo app SulAmérica.',
+    gradient: 'linear-gradient(135deg, #283593, #3949ab)',
+    logo: 'sulamerica.com.br',
+    countries: ['BR'],
+  },
+  {
+    id: 'seguro-vida',
+    name: 'Seguro de Vida',
+    shortDesc: 'Proteção financeira para você e sua família — custeado pela MC1.',
+    description: 'Seguro de vida em grupo SulAmérica que garante proteção financeira ao colaborador e seus beneficiários em casos de morte natural, morte acidental e invalidez permanente por acidente. Custeio inteiramente pela empresa.',
+    details: 'Capital segurado de R$ 33.841,00. A adesão é automática no ato da admissão, sem custo para o colaborador. Para atualizar os beneficiários ou obter mais detalhes sobre coberturas, entre em contato com o RH.',
+    icon: 'icon-shield',
+    color: '#e0f2f1',
+    iconColor: '#00695c',
+    category: 'Proteção',
+    provider: 'SulAmérica',
+    howToAccess: 'A adesão é automática na admissão. Para atualizar beneficiários ou consultar apólice, fale com o RH pelo e-mail rh@mc1global.com.',
+    gradient: 'linear-gradient(135deg, #00695c, #00897b)',
+    logo: 'sulamerica.com.br',
+    countries: ['BR'],
+  },
+  {
+    id: 'wellhub',
+    name: 'Wellhub',
+    shortDesc: 'Acesso a academias, apps e estúdios de bem-estar.',
+    description: 'O Wellhub é uma plataforma completa de bem-estar corporativo que potencializa a sua jornada. O plano gratuito (Free Plan) inclui 5 aplicativos de bem-estar e 12 aulas ao vivo por mês. Você tem 7 dias grátis para explorar a plataforma e verificar academias conveniadas próximas.',
+    details: 'Para planos além do Free Plan, o colaborador escolhe o nível desejado e paga a diferença com desconto em folha. Você pode adicionar dependentes ao plano. Explore academias, piscinas, estúdios e apps de saúde mental como Calm e Headspace.',
+    icon: 'icon-zap',
+    color: '#f3e5f5',
+    iconColor: '#6a1b9a',
+    category: 'Bem-Estar',
+    provider: 'Wellhub',
+    howToAccess: 'Acesse o app ou site do Wellhub, busque pelo nome da sua empresa (MC1), selecione, preencha suas informações e escolha seu plano. Você tem 7 dias grátis para explorar antes de ativar.',
+    gradient: 'linear-gradient(135deg, #4a148c, #6a1b9a)',
+    logo: 'wellhub.com',
+    countries: ['BR'],
+  },
+  {
+    id: 'auxilio-creche',
+    name: 'Auxílio Creche',
+    shortDesc: 'Reembolso mensal para mamães e papais com filhos de até 71 meses.',
+    description: 'Disponível para mamães e papais com filhos de 0 a 71 meses (5 anos e 11 meses). Cobre creches, instituições educacionais ou cuidados de profissional regularmente registrado. Reembolso feito em folha de pagamento todo dia 25 do mês.',
+    details: 'Valores: R$ 720,00/mês para filhos de até 24 meses; R$ 630,00/mês para filhos de 25 a 71 meses. O comprovante de pagamento deve ser enviado ao RH até o dia 15 de cada mês para receber o reembolso no dia 25. O benefício não é tributado como salário.',
+    icon: 'icon-baby',
+    color: '#fff8e1',
+    iconColor: '#e65100',
+    category: 'Família',
+    provider: 'MC1 Global',
+    howToAccess: 'Solicite o benefício por e-mail para rh@mc1global.com. Envie o comprovante de pagamento da creche/cuidador até o dia 15 de cada mês. O reembolso cai na folha no dia 25.',
+    gradient: 'linear-gradient(135deg, #e65100, #f57c00)',
+    logo: null,
+    countries: ['BR'],
+  },
+  {
+    id: 'day-off-aniversario',
+    name: 'Day Off de Aniversário',
+    shortDesc: 'Um dia livre + R$ 50 Flash para celebrar o seu dia especial.',
+    description: 'A MC1 Global acredita que aniversários merecem ser comemorados! Todo colaborador tem direito a um dia de folga remunerada no seu aniversário e um crédito de R$ 50,00 no cartão Flash, pago dentro do mês do aniversário.',
+    details: 'O day off pode ser utilizado no próprio dia do aniversário ou em outra data de sua escolha (válido por 1 ano). Basta alinhar com sua liderança. O crédito de R$ 50,00 (Saldo Flexível Flash) é creditado automaticamente no mês do seu aniversário.',
+    icon: 'icon-gift',
+    color: '#fce4ec',
+    iconColor: '#880e4f',
+    category: 'Qualidade de Vida',
+    provider: 'MC1 Global',
+    howToAccess: 'Alinhe com sua liderança a data do day off. Não quer folgar no dia do aniversário? Escolha outra data (válido por 1 ano). O crédito de R$ 50,00 é creditado no Flash automaticamente no mês do seu aniversário.',
+    gradient: 'linear-gradient(135deg, #880e4f, #c2185b)',
+    logo: null,
+    countries: ['BR'],
+  },
+  {
+    id: 'zenklub',
+    name: 'ZenKlub',
+    shortDesc: '2 sessões gratuitas/mês com psicólogo ou nutricionista.',
+    description: 'A MC1 disponibiliza acesso ao Zenklub, maior plataforma de saúde mental e emocional do Brasil. Você tem 2 sessões gratuitas por mês (50 minutos cada): 2 sessões com psicólogo(a), ou 1 sessão com psicólogo(a) + 1 sessão com nutricionista. Além disso, acesse trilhas personalizadas, testes e exercícios guiados.',
+    details: 'Se quiser fazer mais atendimentos além das 2 sessões mensais gratuitas, cada sessão extra tem o valor fixo de R$ 70,00. A plataforma conta com especialistas qualificados para apoiar em temas como ansiedade, estresse, foco, autoestima, alimentação e bem-estar.',
+    icon: 'icon-brain',
+    color: '#e8f5e9',
+    iconColor: '#1b5e20',
+    category: 'Saúde Mental',
+    provider: 'ZenKlub',
+    howToAccess: 'Baixe o app ou acesse o site do Zenklub. Cadastre-se com seu e-mail corporativo MC1 e insira o código de ativação fornecido pelo RH. Pronto — agende suas sessões e acesse todos os conteúdos.',
+    gradient: 'linear-gradient(135deg, #1b5e20, #2e7d32)',
+    logo: 'zenklub.com.br',
+    countries: ['BR'],
+  },
+];
+
+export const getBeneficio = (id) => beneficios.find(b => b.id === id);
+
+export function getLocalizedBeneficios() {
+  const lang    = getLang();
+  const country = getCountry();
+  const base = lang === 'pt' ? beneficios : (() => {
+    const tr = beneficiosTranslations[lang] || {};
+    return beneficios.map(b => {
+      const override = tr[b.id];
+      return override ? { ...b, ...override } : b;
+    });
+  })();
+  return base.filter(b =>
+    !b.countries || b.countries.includes('ALL') || b.countries.includes(country)
+  );
+}
