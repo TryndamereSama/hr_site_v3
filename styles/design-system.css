@@ -4,22 +4,22 @@
    ============================================================ */
 
 :root {
-  /* ─── Brand Colors ─── */
-  --color-primary:               #004b71;
-  --color-primary-container:     #006494;
-  --color-primary-dark:          #003550;
+  /* ─── Brand Colors (MC1 Identity Guide V4) ─── */
+  --color-primary:               #0093B0; /* Azul MC1 oficial — CMYK 95 14 28 0 */
+  --color-primary-container:     #006098; /* Análoga escura — Pantone 7691 C */
+  --color-primary-dark:          #004065; /* Análoga mais escura — Pantone 7694 C */
   --color-on-primary:            #ffffff;
 
   /* ─── Surface Hierarchy ─── */
-  --color-surface:               #fcf8fb;
-  --color-surface-container-low: #f6f3f5;
+  --color-surface:               #ffffff;
+  --color-surface-container-low: #f4f8fa;
   --color-surface-lowest:        #ffffff;
-  --color-surface-high:          #ede9ec;
+  --color-surface-high:          #e6f0f4;
 
-  /* ─── Text ─── */
-  --color-on-surface:            #1b1b1d;
-  --color-on-surface-variant:    #40484f;
-  --color-on-surface-muted:      #6b7280;
+  /* ─── Text (MC1: cinza escuro #3C3C3B) ─── */
+  --color-on-surface:            #3C3C3B; /* Pantone Black 7 C */
+  --color-on-surface-variant:    #5a6370;
+  --color-on-surface-muted:      #8a9299;
 
   /* ─── Secondary ─── */
   --color-secondary-container:   #d4e8f4;
@@ -74,7 +74,7 @@
   --shadow-md:  0 8px 40px rgba(27, 27, 29, 0.08);
   --shadow-lg:  0 12px 48px rgba(27, 27, 29, 0.10);
   --shadow-xl:  0 24px 64px rgba(27, 27, 29, 0.12);
-  --shadow-focus: 0 0 0 3px rgba(0, 75, 113, 0.30);
+  --shadow-focus: 0 0 0 3px rgba(0, 147, 176, 0.30);
 
   /* ─── Transitions ─── */
   --transition-fast:   150ms ease-out;
@@ -116,7 +116,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-color: var(--color-surface);
   color: var(--color-on-surface);
   line-height: 1.6;

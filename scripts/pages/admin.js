@@ -46,13 +46,13 @@ const NEWS_TAGS = [
 ];
 
 const GRADIENTS = [
-  'linear-gradient(135deg,#004b71,#0077b6)',
-  'linear-gradient(135deg,#1a6fa3,#38b2d8)',
+  'linear-gradient(135deg,#0093B0,#006098)', /* Azul MC1 oficial */
+  'linear-gradient(135deg,#006098,#004065)', /* Análogas escuras */
   'linear-gradient(135deg,#0d4b2e,#1a8c57)',
   'linear-gradient(135deg,#6b21a8,#9333ea)',
   'linear-gradient(135deg,#92400e,#d97706)',
   'linear-gradient(135deg,#991b1b,#ef4444)',
-  'linear-gradient(135deg,#1e3a5f,#3b82f6)',
+  'linear-gradient(135deg,#004065,#0093B0)',
   'linear-gradient(135deg,#134e4a,#14b8a6)',
 ];
 
