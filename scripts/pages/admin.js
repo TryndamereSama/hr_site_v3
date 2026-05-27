@@ -156,20 +156,15 @@ async function saveVisibility(country, sections) {
 
 // ─── Migrate static noticias → Firestore ───
 async function migrateStaticNoticias(panel) {
-  if (!confirm(`Importar ${staticNoticias.length} artigos estáticos para o Firestore?\n\nArtigos com ID já existente serão ignorados.`)) return;
+  if (!confirm(`Sincronizar ${staticNoticias.length} artigos estáticos para o Firestore?\n\nArtigos existentes serão sobrescritos com os dados do código.`)) return;
 
   const fs = await _getFirestore();
-  const { collection, getDocs, setDoc, doc } = fs;
+  const { setDoc, doc } = fs;
 
-  // Fetch existing IDs to skip duplicates
-  const snap = await getDocs(collection(db, 'comunicados'));
-  const existingIds = new Set(snap.docs.map(d => d.id));
-
-  let added = 0, skipped = 0;
+  let updated = 0;
   const errors = [];
 
   for (const n of staticNoticias) {
-    if (existingIds.has(n.id)) { skipped++; continue; }
     try {
       // Map static countries array → new countries array format
       const srcCountries = n.countries || [];
@@ -190,7 +185,7 @@ async function migrateStaticNoticias(panel) {
         published: true,
         featured:  n.featured || false,
       });
-      added++;
+      updated++;
     } catch (e) {
       errors.push(`${n.id}: ${e.message}`);
     }
@@ -199,10 +194,10 @@ async function migrateStaticNoticias(panel) {
   invalidateNoticiasCache();
 
   if (errors.length) {
-    showToast(`${added} importados, ${skipped} ignorados, ${errors.length} erros`, 'error');
+    showToast(`${updated} sincronizados, ${errors.length} erros`, 'error');
     console.error('[Migrate] Erros:', errors);
   } else {
-    showToast(`${added} artigos importados! ${skipped} já existiam.`, 'success');
+    showToast(`${updated} artigos sincronizados com sucesso!`, 'success');
   }
 
   // Reload table
@@ -267,7 +262,7 @@ async function renderComunicadosTab(panel) {
       <h2>Comunicados <span style="font-size:var(--text-sm);font-weight:400;color:var(--color-on-surface-variant)">(${comunicados.length})</span></h2>
       <div style="display:flex;gap:var(--space-2)">
         <button class="btn btn-ghost btn-sm" id="btn-migrate-noticias" title="Importar artigos estáticos do código para o Firestore">
-          <svg width="14" height="14"><use href="#icon-upload"/></svg>Importar estáticos
+          <svg width="14" height="14"><use href="#icon-upload"/></svg>Sincronizar Estáticos
         </button>
         <button class="btn btn-primary" id="btn-new-comunicado">
           <svg width="14" height="14"><use href="#icon-plus"/></svg>Novo comunicado
