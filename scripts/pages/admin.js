@@ -155,6 +155,46 @@ async function saveVisibility(country, sections) {
 }
 
 // ─── Migrate static noticias → Firestore ───
+const LEGACY_AUTHORS = ['Gente & Futuro', 'Equipe RH', 'Equipo RH', 'HR Team', 'Human Resources', 'Recursos Humanos'];
+
+async function fixLegacyAuthors(panel) {
+  const fs = await _getFirestore();
+  const { collection, getDocs, updateDoc, doc } = fs;
+
+  const snap = await getDocs(collection(db, 'comunicados'));
+  const toFix = snap.docs.filter(d => LEGACY_AUTHORS.includes(d.data().author));
+
+  if (toFix.length === 0) {
+    showToast('Nenhum autor antigo encontrado — tudo certo!', 'success');
+    return;
+  }
+
+  if (!confirm(`Encontrado(s) ${toFix.length} artigo(s) com autor antigo.\n\nAtualizar todos para "People Ops"?`)) return;
+
+  let updated = 0;
+  const errors = [];
+
+  for (const d of toFix) {
+    try {
+      await updateDoc(doc(db, 'comunicados', d.id), { author: 'People Ops' });
+      updated++;
+    } catch (e) {
+      errors.push(`${d.id}: ${e.message}`);
+    }
+  }
+
+  invalidateNoticiasCache();
+
+  if (errors.length) {
+    showToast(`${updated} atualizados, ${errors.length} erros`, 'error');
+    console.error('[FixAuthors] Erros:', errors);
+  } else {
+    showToast(`${updated} autor(es) corrigido(s) para "People Ops"!`, 'success');
+  }
+
+  renderComunicadosTab(panel);
+}
+
 async function migrateStaticNoticias(panel) {
   if (!confirm(`Sincronizar ${staticNoticias.length} artigos estáticos para o Firestore?\n\nArtigos existentes serão sobrescritos com os dados do código.`)) return;
 
@@ -261,6 +301,9 @@ async function renderComunicadosTab(panel) {
     <div class="admin-toolbar">
       <h2>Comunicados <span style="font-size:var(--text-sm);font-weight:400;color:var(--color-on-surface-variant)">(${comunicados.length})</span></h2>
       <div style="display:flex;gap:var(--space-2)">
+        <button class="btn btn-ghost btn-sm" id="btn-fix-authors" title="Atualizar autores antigos (Gente & Futuro, Equipe RH…) para People Ops">
+          <svg width="14" height="14"><use href="#icon-users"/></svg>Corrigir Autores
+        </button>
         <button class="btn btn-ghost btn-sm" id="btn-migrate-noticias" title="Importar artigos estáticos do código para o Firestore">
           <svg width="14" height="14"><use href="#icon-upload"/></svg>Sincronizar Estáticos
         </button>
@@ -283,6 +326,9 @@ async function renderComunicadosTab(panel) {
         <tbody id="comunicados-tbody">${tableRows}</tbody>
       </table>
     </div>`;
+
+  // Fix legacy authors
+  panel.querySelector('#btn-fix-authors').addEventListener('click', () => fixLegacyAuthors(panel));
 
   // Migrate static noticias
   panel.querySelector('#btn-migrate-noticias').addEventListener('click', () => migrateStaticNoticias(panel));
