@@ -1,10 +1,10 @@
-// MC1 HUB — HR Team Contacts Data
+// MC1 HUB — People Operations Team Contacts Data
 export const contatos = [
   {
     id: 'viviane-oliveira',
     name: 'Viviane Sousa de Oliveira',
-    role: 'Gerente de RH',
-    department: 'Recursos Humanos',
+    role: 'People Operations Manager',
+    department: 'People Operations',
     email: 'viviane.oliveira@mc1global.com',
     initials: 'VO',
     colorIndex: 0,
@@ -14,7 +14,7 @@ export const contatos = [
     id: 'vinicius-faria',
     name: 'Vinicius Faria do Nascimento',
     role: 'Analista de Planejamento SR',
-    department: 'Recursos Humanos',
+    department: 'People Operations',
     email: 'vinicus.faria@mc1global.com',
     initials: 'VF',
     colorIndex: 1,
@@ -23,8 +23,8 @@ export const contatos = [
   {
     id: 'pedro-zaqueu',
     name: 'Pedro Vitor de Oliveira Zaqueu',
-    role: 'Analista JR de RH',
-    department: 'Recursos Humanos',
+    role: 'Analista Jr. People Operations',
+    department: 'People Operations',
     email: 'pedro.zaqueu@mc1global.com',
     initials: 'PZ',
     colorIndex: 2,
@@ -33,8 +33,8 @@ export const contatos = [
   {
     id: 'vanessa-nunes',
     name: 'Vanessa Nascimento Rolim Nunes',
-    role: 'Assistente de RH',
-    department: 'Recursos Humanos',
+    role: 'Assistente People Operations',
+    department: 'People Operations',
     email: 'vanessa.nunes@mc1global.com',
     initials: 'VN',
     colorIndex: 3,
@@ -43,8 +43,8 @@ export const contatos = [
   {
     id: 'barbara-simarelli',
     name: 'Barbara Garcia Simarelli',
-    role: 'Estagiária de RH',
-    department: 'Recursos Humanos',
+    role: 'Estagiária People Operations',
+    department: 'People Operations',
     email: 'barbara.simarelli@mc1global.com',
     initials: 'BS',
     colorIndex: 4,

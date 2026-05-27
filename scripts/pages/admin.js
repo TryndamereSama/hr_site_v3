@@ -23,7 +23,7 @@ const COUNTRIES = [
 ];
 
 const SECTIONS = [
-  { key: 'rh',          label: 'RH & Benefícios' },
+  { key: 'rh',          label: 'People Ops & Benefícios' },
   { key: 'financeiro',  label: 'Financeiro' },
   { key: 'marketing',   label: 'Marketing' },
   { key: 'operacional', label: 'Operacional' },
@@ -180,7 +180,7 @@ async function migrateStaticNoticias(panel) {
         title:     n.title,
         excerpt:   n.excerpt || '',
         tag:       n.tag || 'comunicado',
-        author:    n.author || 'Equipe RH',
+        author:    n.author || 'People Ops',
         date:      n.date,
         readTime:  n.readTime || '2 min',
         countries,
@@ -328,7 +328,7 @@ const TEMPLATES = [
   { value: 'aniversariantes', label: '🎂 Aniversariantes' },
   { value: 'evento',          label: '🎤 Evento / Palestra' },
   { value: 'boasvindas',      label: '👋 Boas-vindas' },
-  { value: 'pagamento',       label: '💰 Pagamento / RH' },
+  { value: 'pagamento',       label: '💰 Pagamento / People Ops' },
   { value: 'beneficio',       label: '⭐ Benefício / Programa' },
 ];
 
@@ -450,7 +450,7 @@ function _tplFields(tpl, td) {
         <div class="form-field">
           <label class="form-check" style="cursor:pointer">
             <input type="checkbox" name="tpl_show_callout" ${d.show_callout!==false?'checked':''} />
-            <span class="form-check-label">Mostrar box de contato (Dúvidas? Entre em contato com o RH)</span>
+            <span class="form-check-label">Mostrar box de contato (Dúvidas? Entre em contato com o People Ops)</span>
           </label>
           <input class="form-input" name="tpl_callout_email" placeholder="rh@mc1global.com" value="${d.callout_email||'rh@mc1global.com'}" style="margin-top:var(--space-2)" />
         </div>`;
@@ -526,7 +526,7 @@ function _sectionRow(s, i) {
 function _buildBodyFromTemplate(form, tpl, imageUrl) {
   const v = n => (form.querySelector(`[name=${n}]`)?.value || '').trim();
   const img = (src, alt) => src ? `<img src="${src}" alt="${alt}" style="width:100%; border-radius:12px; margin-bottom:1.5rem;" />\n` : '';
-  const callout = (email) => `<p style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--color-surface-container-low);border-left:3px solid var(--color-primary);border-radius:0 var(--radius-md) var(--radius-md) 0;">Dúvidas? Entre em contato com o RH pelo e-mail <strong>${email}</strong>.</p>`;
+  const callout = (email) => `<p style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--color-surface-container-low);border-left:3px solid var(--color-primary);border-radius:0 var(--radius-md) var(--radius-md) 0;">Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>${email}</strong>.</p>`;
 
   switch (tpl) {
     case 'aniversariantes': {
@@ -722,7 +722,7 @@ function openComunicadoForm(item, onSaved) {
           </div>
           <div class="form-field">
             <label class="form-label">Autor</label>
-            <input class="form-input" name="author" value="${item?.author || 'Equipe RH'}" />
+            <input class="form-input" name="author" value="${item?.author || 'People Ops'}" />
           </div>
         </div>
         <div class="form-row">
@@ -840,7 +840,7 @@ function openComunicadoForm(item, onSaved) {
       title:        fd.get('title').trim(),
       excerpt:      fd.get('excerpt').trim(),
       tag:          fd.get('tag'),
-      author:       fd.get('author').trim() || 'Equipe RH',
+      author:       fd.get('author').trim() || 'People Ops',
       date:         fd.get('date'),
       readTime:     fd.get('readTime').trim() || '2 min',
       countries:    selectedCountries.length ? selectedCountries : ['BR', 'MX', 'US'],

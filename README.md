@@ -1,6 +1,6 @@
 # MC1 Hub — Intranet Corporativa
 
-Portal de intranet da MC1 Global, desenvolvido para o departamento de Recursos Humanos.
+Portal de intranet da MC1 Global, desenvolvido para o departamento de People Operations.
 
 ## Visão Geral
 
@@ -70,11 +70,11 @@ Acesse: `http://localhost:3333/#/`
 
 | Nome | Cargo |
 |---|---|
-| Viviane Sousa de Oliveira | Gerente de RH |
+| Viviane Sousa de Oliveira | People Operations Manager |
 | Vinicius Faria do Nascimento | Analista de Planejamento SR |
-| Pedro Vitor de Oliveira Zaqueu | Analista JR de RH |
-| Vanessa Nascimento Rolim Nunes | Assistente de RH |
-| Barbara Garcia Simarelli | Estagiária de RH |
+| Pedro Vitor de Oliveira Zaqueu | Analista Jr. People Operations |
+| Vanessa Nascimento Rolim Nunes | Assistente People Operations |
+| Barbara Garcia Simarelli | Estagiária People Operations |
 
 ## Roadmap
 

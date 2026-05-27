@@ -403,7 +403,7 @@ export function initFooter() {
           <ul class="footer-links">
             <li><a href="#/" data-i18n="nav.home">${t('nav.home')}</a></li>
             <li><a href="#/noticias" data-i18n="nav.news">${t('nav.news')}</a></li>
-            <li><a href="#/rh">RH & Benefícios</a></li>
+            <li><a href="#/rh">People Ops & Benefícios</a></li>
             <li><a href="#/politicas" data-i18n="nav.docs">${t('nav.docs')}</a></li>
           </ul>
         </div>

@@ -30,7 +30,7 @@ export async function renderRH(container) {
           <p>${t('rh.subtitle')}</p>
         </div>
         <!-- Tabs -->
-        <div class="tabs" role="tablist" aria-label="Seções de RH">
+        <div class="tabs" role="tablist" aria-label="Seções de People Ops">
           <button class="tab-btn active" data-tab="beneficios" role="tab" aria-selected="true" aria-controls="tab-beneficios">
             <svg width="14" height="14" style="display:inline;margin-right:6px"><use href="#icon-heart"/></svg>${t('rh.tab.benefits')}
           </button>

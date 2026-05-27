@@ -38,7 +38,7 @@ export const noticias = [
       <p style="text-align:center;font-size:1.15rem;font-weight:800;color:#16a34a;letter-spacing:0.02em">#VAMOSTOTALIZAR</p>
 
       <p style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--color-surface-container-low);border-left:3px solid var(--color-primary);border-radius:0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Benefício',
@@ -46,7 +46,7 @@ export const noticias = [
     tagLabel: 'Benefício',
     date: '2026-05-20',
     dateLabel: '20 de maio de 2026',
-    author: 'Gente & Futuro',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/totalpass-novo-beneficio.png',
     gradient: 'linear-gradient(135deg, #0d4b2e, #16a34a)',
@@ -64,10 +64,10 @@ export const noticias = [
 
       <p>Se você possui um plano ativo, lembre-se de acompanhar e gerenciar o faturamento no seu cartão de crédito para evitar cobranças após esse período. Em caso de dúvidas, utilize o suporte no app do Wellhub.</p>
 
-      <p style="margin-top:1.5rem;color:var(--color-on-surface-variant);font-style:italic">Gente &amp; Futuro</p>
+      <p style="margin-top:1.5rem;color:var(--color-on-surface-variant);font-style:italic">People Ops</p>
 
       <p style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--color-surface-container-low);border-left:3px solid var(--color-primary);border-radius:0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Benefício',
@@ -75,7 +75,7 @@ export const noticias = [
     tagLabel: 'Benefício',
     date: '2026-05-20',
     dateLabel: '20 de maio de 2026',
-    author: 'Gente & Futuro',
+    author: 'People Ops',
     readTime: '1 min',
     image: null,
     gradient: 'linear-gradient(135deg, #4a148c, #6a1b9a)',
@@ -133,7 +133,7 @@ export const noticias = [
       <p>Você tem o benefício do Zenklub para ser seu <strong>EPI de saúde mental</strong> em casos como: estresse excessivo, ansiedade, sintomas de depressão ou só para se conhecer mais e viver melhor.</p>
 
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Benefício',
@@ -141,7 +141,7 @@ export const noticias = [
     tagLabel: 'Benefício',
     date: '2026-04-15',
     dateLabel: '15 de abril de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/zenklub-voce-sabia.jpg',
     gradient: 'linear-gradient(135deg, #6d28d9 0%, #a855f7 100%)',
@@ -160,7 +160,7 @@ export const noticias = [
       <ul style="padding-left: 1.5rem; margin: 1rem 0; display: flex; flex-direction: column; gap: 0.5rem;">
         <li>🇧🇷 <strong>04</strong> — Everton Rodrigues · Infra</li>
         <li>🇧🇷 <strong>04</strong> — Wislan Lopes Moraes · Infra</li>
-        <li>🇧🇷 <strong>05</strong> — Vanessa Nunes · Gente &amp; Futuro</li>
+        <li>🇧🇷 <strong>05</strong> — Vanessa Nunes · People Ops</li>
         <li>🇧🇷 <strong>06</strong> — Gabriel Mitsuo Haibara · PSG</li>
         <li>🇧🇷 <strong>08</strong> — Fabio Cabral de Almeida · GST</li>
         <li>🇲🇽 <strong>16</strong> — David Perez Ruiz · PSG</li>
@@ -184,7 +184,7 @@ export const noticias = [
     tagLabel: 'Celebração',
     date: '2026-04-02',
     dateLabel: '2 de abril de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/Birhtday 04.2026.png',
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -206,7 +206,7 @@ export const noticias = [
       <h3>Quando Utilizar</h3>
       <p>Utilize o canal para reportar situações que envolvam condutas inadequadas, violações de políticas, ou quaisquer preocupações éticas que você não se sinta confortável em tratar pelos canais tradicionais.</p>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Comunicado',
@@ -214,7 +214,7 @@ export const noticias = [
     tagLabel: 'Comunicado',
     date: '2026-03-20',
     dateLabel: '20 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/17- Canal Speak Up Safely MC1.png',
     gradient: 'linear-gradient(135deg, #004b71 0%, #006494 100%)',
@@ -245,7 +245,7 @@ export const noticias = [
     tagLabel: 'Comunicado',
     date: '2026-03-19',
     dateLabel: '19 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/16- Speak Up Safely MC1.png',
     gradient: 'linear-gradient(135deg, #004b71 0%, #006494 100%)',
@@ -275,7 +275,7 @@ export const noticias = [
     tagLabel: 'Bem-estar',
     date: '2026-03-16',
     dateLabel: '16 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/15- Palestra Saúde da Mulher.png',
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -314,7 +314,7 @@ export const noticias = [
       <p>Já está definido que o reajuste salarial para 2027 será com base no <strong>INPC acumulado de 2026, acrescido de mais 1% (um por cento)</strong>. Todas as cláusulas da convenção que mencionam valores serão reajustadas por este índice.</p>
 
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong> ou acesse a página de <a href="#/contato" style="color: var(--color-primary); font-weight: 600;">Contato</a>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong> ou acesse a página de <a href="#/contato" style="color: var(--color-primary); font-weight: 600;">Contato</a>.
       </p>
     `,
     category: 'Sindicato',
@@ -322,7 +322,7 @@ export const noticias = [
     tagLabel: 'Sindicato',
     date: '2026-03-15',
     dateLabel: '15 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '4 min',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1400&q=80',
     gradient: 'linear-gradient(135deg, #004b71 0%, #006494 100%)',
@@ -353,7 +353,7 @@ export const noticias = [
     tagLabel: 'Comunicado',
     date: '2026-03-13',
     dateLabel: '13 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/14- Boas-Vindas Gilberto Márquez.png',
     gradient: 'linear-gradient(135deg, #004b71 0%, #006494 100%)',
@@ -385,7 +385,7 @@ export const noticias = [
         <li><strong>Caminho:</strong> Dados Contratuais → Informe de Rendimentos → Ano: 2025</li>
       </ul>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'RH',
@@ -393,7 +393,7 @@ export const noticias = [
     tagLabel: 'Pagamento',
     date: '2026-03-13',
     dateLabel: '13 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '3 min',
     image: 'assets/images/13- ATENÇÃO NOVO Informe de Rendimentos 2025 (image1).png',
     gradient: 'linear-gradient(135deg, #1d6b8a 0%, #004b71 100%)',
@@ -406,7 +406,7 @@ export const noticias = [
     title: 'Adiantamento Reajuste Salarial — Antecipação de 3% em Janeiro',
     excerpt: 'As negociações da Convenção SINDPD/SEPROSP ainda não foram concluídas. A MC1, por liberalidade, antecipou 3% de reajuste na folha de janeiro/2026.',
     body: `
-      <p>O departamento de Recursos Humanos informa que as negociações da <strong>Convenção Coletiva SINDPD/SEPROSP</strong> ainda não foram concluídas até o fechamento da folha de janeiro de 2026.</p>
+      <p>O time de People Operations informa que as negociações da <strong>Convenção Coletiva SINDPD/SEPROSP</strong> ainda não foram concluídas até o fechamento da folha de janeiro de 2026.</p>
       <h3>Adiantamento por Liberalidade da MC1</h3>
       <p>A MC1, por <strong>liberalidade</strong> e comprometimento com seus colaboradores, antecipou <strong>3% (três por cento)</strong> de reajuste salarial já na folha de pagamento de <strong>janeiro/2026</strong>.</p>
       <h3>Acerto da Diferença</h3>
@@ -414,7 +414,7 @@ export const noticias = [
       <h3>Quem tem direito</h3>
       <p>Os colaboradores admitidos ao longo de <strong>2025</strong> terão o reajuste aplicado de forma <strong>proporcional ao tempo de trabalho</strong> no período.</p>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'RH',
@@ -422,7 +422,7 @@ export const noticias = [
     tagLabel: 'Pagamento',
     date: '2026-03-10',
     dateLabel: '10 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '3 min',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80',
     gradient: 'linear-gradient(135deg, #1d6b8a 0%, #004b71 100%)',
@@ -446,7 +446,7 @@ export const noticias = [
     tagLabel: 'Celebração',
     date: '2026-03-06',
     dateLabel: '6 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '1 min',
     image: 'assets/images/11- Feliz dia da Mulher.png',
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -471,7 +471,7 @@ export const noticias = [
     tagLabel: 'Celebração',
     date: '2026-03-05',
     dateLabel: '5 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/Birhtday 03.2026.png',
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -496,7 +496,7 @@ export const noticias = [
       <p>O bônus para indicações aprovadas é de <strong>R$ 1.000,00 (mil reais)</strong>, pago após a conclusão do período de experiência do colaborador indicado.</p>
       <p>Confira as vagas disponíveis no portal e comece a indicar seus talentos!</p>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Programas',
@@ -504,7 +504,7 @@ export const noticias = [
     tagLabel: 'Programas',
     date: '2026-03-05',
     dateLabel: '5 de março de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '3 min',
     image: 'assets/images/12- Programa Indicação Amiga MC1 v2.png',
     gradient: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
@@ -529,7 +529,7 @@ export const noticias = [
         <li><strong>Ano:</strong> 2025</li>
       </ul>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Problemas para acessar? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Problemas para acessar? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'RH',
@@ -537,7 +537,7 @@ export const noticias = [
     tagLabel: 'Pagamento',
     date: '2026-02-27',
     dateLabel: '27 de fevereiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/10 - Informe de Rendimentos 2025 (image1).png',
     gradient: 'linear-gradient(135deg, #1d6b8a 0%, #004b71 100%)',
@@ -550,7 +550,7 @@ export const noticias = [
     title: 'PLR 2025 — Pagamento por Liberalidade da MC1',
     excerpt: 'As metas da PLR 2025 não foram atingidas. Mesmo assim, a MC1 pagará R$ 500,00 por liberalidade a todos os colaboradores CLT. Pagamento em 27/02/2026.',
     body: `
-      <p>O departamento de Recursos Humanos informa os colaboradores sobre a <strong>PLR (Participação nos Lucros e Resultados) 2025</strong>.</p>
+      <p>O time de People Operations informa os colaboradores sobre a <strong>PLR (Participação nos Lucros e Resultados) 2025</strong>.</p>
       <h3>Resultado das Metas</h3>
       <p>Informamos que as metas estabelecidas para a PLR 2025 <strong>não foram atingidas</strong>.</p>
       <h3>Pagamento por Liberalidade</h3>
@@ -562,7 +562,7 @@ export const noticias = [
       <h3>Associados ao Sindicato</h3>
       <p>Colaboradores não associados ao SINDPD terão um <strong>desconto de 6%</strong> sobre o valor, conforme previsto na Convenção Coletiva.</p>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'RH',
@@ -570,7 +570,7 @@ export const noticias = [
     tagLabel: 'Pagamento',
     date: '2026-02-25',
     dateLabel: '25 de fevereiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '3 min',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80',
     gradient: 'linear-gradient(135deg, #1d6b8a 0%, #004b71 100%)',
@@ -583,7 +583,7 @@ export const noticias = [
     title: 'Feriado de Carnaval 2026 — Comunicado Oficial',
     excerpt: 'Terça-feira, 17/02, é feriado de Carnaval. Na Quarta-feira de Cinzas (18/02), as atividades têm início às 12h (BRT). Não há pontes oficiais.',
     body: `
-      <p>O departamento de Recursos Humanos informa os colaboradores sobre as orientações para o período de <strong>Carnaval 2026</strong>.</p>
+      <p>O time de People Operations informa os colaboradores sobre as orientações para o período de <strong>Carnaval 2026</strong>.</p>
       <h3>Feriado de Carnaval</h3>
       <p>A <strong>terça-feira, 17 de fevereiro de 2026</strong>, é feriado de Carnaval, sendo considerado dia não útil para todos os colaboradores.</p>
       <h3>Quarta-feira de Cinzas</h3>
@@ -591,7 +591,7 @@ export const noticias = [
       <h3>Pontes Facultativas</h3>
       <p>Informamos que <strong>não há pontes oficiais</strong> determinadas pela empresa para este período. As áreas que desejarem fazer compensação de horas devem alinhar previamente com seus gestores, respeitando o banco de horas.</p>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Calendário',
@@ -599,7 +599,7 @@ export const noticias = [
     tagLabel: 'Calendário',
     date: '2026-02-13',
     dateLabel: '13 de fevereiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=1400&q=80',
     gradient: 'linear-gradient(135deg, #d97706 0%, #f59e0b 100%)',
@@ -624,7 +624,7 @@ export const noticias = [
     tagLabel: 'Celebração',
     date: '2026-02-05',
     dateLabel: '5 de fevereiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/Birhtday 02.2026.png',
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -671,7 +671,7 @@ export const noticias = [
     tagLabel: 'Calendário',
     date: '2026-01-29',
     dateLabel: '29 de janeiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '4 min',
     image: 'https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=1400&q=80',
     gradient: 'linear-gradient(135deg, #d97706 0%, #f59e0b 100%)',
@@ -696,7 +696,7 @@ export const noticias = [
     tagLabel: 'Celebração',
     date: '2026-01-08',
     dateLabel: '8 de janeiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '2 min',
     image: 'assets/images/Birhtday 01.2026.png',
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -709,7 +709,7 @@ export const noticias = [
     title: 'Convenção SINDPD 2026 — Comunicado Inicial e Período de Oposição',
     excerpt: 'Informamos o início do processo da Convenção Coletiva SINDPD 2026. O índice ainda não foi divulgado. O prazo para oposição à contribuição vai de 05/01 a 14/01/2026.',
     body: `
-      <p>O departamento de Recursos Humanos informa os colaboradores sobre o início do processo da <strong>Convenção Coletiva de Trabalho SINDPD 2026</strong>.</p>
+      <p>O time de People Operations informa os colaboradores sobre o início do processo da <strong>Convenção Coletiva de Trabalho SINDPD 2026</strong>.</p>
       <h3>Índice de Reajuste</h3>
       <p>O índice de reajuste salarial para 2026 <strong>ainda não foi divulgado</strong> pelo Sindicato. Assim que as negociações forem concluídas e o índice homologado, informaremos a todos os colaboradores.</p>
       <h3>Período de Oposição à Contribuição Sindical</h3>
@@ -722,7 +722,7 @@ export const noticias = [
       <h3>Como formalizar a oposição</h3>
       <p>A carta de oposição deve ser <strong>entregue pessoalmente</strong> ao RH dentro do prazo indicado. Não serão aceitas oposições enviadas por e-mail ou outros meios.</p>
       <p style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-surface-container-low); border-left: 3px solid var(--color-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        Dúvidas? Entre em contato com o RH pelo e-mail <strong>rh@mc1global.com</strong>.
+        Dúvidas? Entre em contato com o People Ops pelo e-mail <strong>rh@mc1global.com</strong>.
       </p>
     `,
     category: 'Sindicato',
@@ -730,7 +730,7 @@ export const noticias = [
     tagLabel: 'Sindicato',
     date: '2026-01-02',
     dateLabel: '2 de janeiro de 2026',
-    author: 'Equipe RH',
+    author: 'People Ops',
     readTime: '3 min',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1400&q=80',
     gradient: 'linear-gradient(135deg, #004b71 0%, #006494 100%)',

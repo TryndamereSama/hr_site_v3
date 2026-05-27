@@ -141,7 +141,7 @@ function _loginHTML() {
           <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
         </svg>
       </div>
-      <h3>Assistente de RH</h3>
+      <h3>Assistente People Ops</h3>
       <p>Informe seu CPF para continuar.</p>
       <form id="chat-cpf-form" novalidate>
         <div class="chat-field">
@@ -196,7 +196,7 @@ function _ativacaoHTML() {
       </div>
       <div class="chat-activation-badge">Primeiro Acesso</div>
       <h3>${primeiroNome ? `Olá, ${primeiroNome}! 👋` : 'Bem-vindo(a)!'}</h3>
-      <p>Crie uma senha para ativar sua conta e acessar o Assistente de RH.</p>
+      <p>Crie uma senha para ativar sua conta e acessar o Assistente People Ops.</p>
       <form id="chat-activation-form" novalidate>
         <div class="chat-field">
           <label for="chat-new-pwd">Criar senha <span style="color:var(--color-text-muted);font-weight:400">(mín. 6 caracteres)</span></label>
